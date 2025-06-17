@@ -1,0 +1,116 @@
+.container {
+    padding: 30px 60px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .title, .subtitle {
+    text-align: left;
+    color: #000;
+  }
+  
+  .title {
+    font-weight: 500;
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 0px;
+  }
+  
+  .searchGroup {
+    width: 100%;
+    max-width: 1458px;
+    margin: 0 auto 30px;
+    padding: 0;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  
+  .inputWrapper {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .selectGroup {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .tableHeader {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 0.5fr 1fr;
+    padding: 1rem;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 195, 161, 0.42);
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .analyseList {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 900px) {
+    .title {
+      font-size: 24px;
+    }
+  
+    .subtitle {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .searchInput, .select {
+      font-size: 14px;
+    }
+
+    .selectGroup {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  
+    .tableHeader {
+      display: none; 
+    }
+  
+    .analyseItem {
+      grid-template-columns: 1fr; 
+      padding: 0.5rem;
+      gap: 0.5rem;
+    }
+  
+    .analyseName {
+      font-size: 1rem;
+    }
+  
+    .labName, .labAddress {
+      font-size: 0.85rem;
+    }
+  
+    .price {
+      font-size: 1rem;
+      text-align: left;
+    }
+  
+    .orderButton {
+      font-size: 0.85rem;
+      width: 100%;
+      max-width: 100%;
+      height: 40px;
+      justify-self: stretch;
+    }
+  }
+  

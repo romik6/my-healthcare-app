@@ -1,0 +1,267 @@
+.container {
+  padding: 30px 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.servicesTitle {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 30px 30px;
+  color: #333;
+}
+
+.servicesContainer {
+  display: flex;
+  gap: 20px; 
+  justify-content: center; 
+  flex-wrap: nowrap;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.doctorTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 30px;
+}
+
+.sectionTitle {
+  font-size: 30px;
+  font-weight: 300;
+  color: #333;
+  margin: 0;
+}
+
+.scheduleLink {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  text-decoration: none;
+  color: #00C3A1;
+}
+
+.doctorGrid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.doctorCard {
+  width: 48%;
+  padding: 20px 30px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  gap: 20px;
+  align-items: center;
+}
+
+.cardHeader {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.detailsButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  margin-right: 8px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  color: #FBDA03;
+  cursor: pointer;
+}
+
+.doctorImage {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.doctorInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.doctorName {
+  font-size: 24px;
+  font-weight: 550;
+  margin: 0px;
+  color: #333333;
+}
+
+.infoItem p,
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+}
+
+.infoItem p {
+  font-size: 18px;
+  font-weight: 200;
+  font-style: italic;
+  color: #333333;
+}
+
+.infoIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.buttonIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.scheduleButton {
+  background-color: #00c3a368;
+  border: none;
+  color: #333333;
+  border-radius: 10px;
+  padding: 12px 25px;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .headerBox {
+    padding: 26px 20px;
+  }
+
+  .servicesContainer {
+    flex-direction: column; 
+    width: 100%; 
+    gap: 30px; 
+  }
+
+  .doctorCard {
+    width: 100%;
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .headerBox {
+    padding: 20px;
+  }
+
+  .middleRow {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .headerInfo {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .servicesTitle {
+    font-size: 24px;
+  }
+
+  .servicesContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .doctorCard {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .doctorImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .doctorName {
+    font-size: 20px;
+  }
+
+  .infoItem p {
+    font-size: 14px;
+  }
+
+  .scheduleButton {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerBox {
+    padding: 15px;
+  }
+
+  .middleRow {
+    padding: 0 10px;
+  }
+
+  .hospitalName {
+    font-size: 20px;
+  }
+
+  .clinicType,
+  .schedule {
+    font-size: 12px;
+  }
+
+  .contactText,
+  .address {
+    font-size: 14px;
+  }
+
+  .servicesTitle {
+    font-size: 20px;
+  }
+
+  .servicesContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .doctorCard {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .doctorImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .doctorName {
+    font-size: 18px;
+  }
+
+  .infoItem p {
+    font-size: 12px;
+  }
+
+  .scheduleButton {
+    padding: 8px 16px;
+  }
+}
